@@ -10,7 +10,17 @@ class Ideone
 		int n=s.nextInt();
 		int m=s.nextInt();
 		int p=n*m;int fl=0;
-		for(int i=1;i<p/2;i++)
+		if(n==0 || m==0)
+		{
+			System.out.println("yes");
+		}
+		else if(n==m)
+		{
+			System.out.print("yes");
+		}
+		else
+		{
+		for(int i=1;i<=p/2;i++)
 		{
 			if((i*i)==p)
 			{
@@ -21,7 +31,7 @@ class Ideone
 		System.out.print("yes");
 		else
 		System.out.print("no");
-		
+		}
 		
 	}
 }
